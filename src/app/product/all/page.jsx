@@ -66,8 +66,8 @@ const All = () => {
     <div>
       <div className="flex flex-wrap  justify-evenly  gap-[30px]">
             {data.map((e)=>{
-               return <Link href={`/product/${e.id}`}>
-               <div className='text-center' key={e.id}>
+               return <Link href={`/product/${e.id}`} key={e.id}>
+               <div className='text-center' >
                 <Image src={e.img} />
                 <p className='text-[20px] mt-[20px] text-gray-500'>{e.name}</p>
                 <p className='text-[18px] font-[700]'>{e.price}</p>

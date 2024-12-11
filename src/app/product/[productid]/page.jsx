@@ -70,7 +70,7 @@ const productbyid = async ({ params }) => {
             {data.map((e) => {
                 if (e.id == productid) {
                     return (
-                        <div className="flex flex-col lg:flex-row bg-white shadow-lg rounded-lg overflow-hidden max-w-5xl" key={e.id}>
+                        <div  key={e.id} className="flex flex-col lg:flex-row bg-white shadow-lg rounded-lg overflow-hidden max-w-5xl" >
                             <div className="relative w-full lg:w-1/2 h-64 lg:h-auto">
                                 <Image src={e.img} alt={e.name} layout="fill" objectFit="cover" className="rounded-l-lg" />
                             </div>
